@@ -32,7 +32,7 @@ echo 將 %CE_PATH%\Desktop\System.Data.SqlServerCe.Entity\System.Data.SqlServerCe
 robocopy "%CE_PATH%\Desktop\System.Data.SqlServerCe.Entity" %MY_HOME%\bin /E
 
 echo 將 %CE_PATH%\Private\x86\* 複製到 ~bin\x86
-robocopy "%CE_PATH%\Private\x86"   %MY_HOME%\bin\x86 /E
+robocopy "%CE_PATH%\Private\x86" %MY_HOME%\bin\x86 /E
 
 echo 將 %CE_PATH%\Private\amd64\* 複製到 ~bin\amd64
 robocopy "%CE_PATH%\Private\amd64" %MY_HOME%\bin\amd64 /E
