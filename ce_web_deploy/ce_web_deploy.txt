@@ -1,18 +1,17 @@
-°Ñ¦Òºô§}¡G
+ï»¿åƒè€ƒç¶²å€ï¼š
 http://blog.darkthread.net/post-2013-06-30-deploy-sqlce4-by-copy-files.aspx
 
-1. ½Æ»s¬ÛÃöÀÉ®×:
-	* ±N C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll ½Æ»s¨ì ~\bin
-	* ±N C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.Entity\System.Data.SqlServerCe.Entity.dll ½Æ»s¨ì ~\bin
-	* ±N C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Private\x86\*
-	½Æ»s¨ì ~bin\x86
-	* ±N C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Private\amd64\* ½Æ»s¨ì ~bin\amd64
-	ª`·N: System.Data.SqlServerCe.dll ¤Î System.Data.SqlServerCe.Entity.dll ­n¥Î Desktop ¥Ø¿ıªºª©¥»¦Ó¤£¯àª½±µ¥Î Private ¥Ø¿ıªºª©¥»¡F
-				Private ¥Ø¿ı¤Uªº x86 »P amd64 ¤º®e Unmanaged µ{¦¡®w°O±o¤]­n¤@¨Ö½Æ»s¨ì bin ¥Ø¿ı¤U(©Ò¥H bin ¤UÀ³¸Ó­n¦³ x86 ¤Î amd64 ¨â­Ó¤l¥Ø¿ı) 
+1. è¤‡è£½ç›¸é—œæª”æ¡ˆ:
+	* å°‡ C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll è¤‡è£½åˆ° ~\bin
+	* å°‡ C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.Entity\System.Data.SqlServerCe.Entity.dll è¤‡è£½åˆ° ~\bin
+	* å°‡ C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Private\x86\* è¤‡è£½åˆ° ~bin\x86
+	* å°‡ C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Private\amd64\* è¤‡è£½åˆ° ~bin\amd64
+	æ³¨æ„: System.Data.SqlServerCe.dll åŠ System.Data.SqlServerCe.Entity.dll è¦ç”¨ Desktop ç›®éŒ„çš„ç‰ˆæœ¬è€Œä¸èƒ½ç›´æ¥ç”¨ Private ç›®éŒ„çš„ç‰ˆæœ¬ï¼›
+				Private ç›®éŒ„ä¸‹çš„ x86 èˆ‡ amd64 å…§å®¹ Unmanaged ç¨‹å¼åº«è¨˜å¾—ä¹Ÿè¦ä¸€ä½µè¤‡è£½åˆ° bin ç›®éŒ„ä¸‹(æ‰€ä»¥ bin ä¸‹æ‡‰è©²è¦æœ‰ x86 åŠ amd64 å…©å€‹å­ç›®éŒ„) 
 
-2. ¥[¤J DbProvider ³]©w:
-¦øªA¾¹¥¼¦w¸Ë SQL CE¡A.NET ·|¤£»{±o Microsoft SQL Server Compact Data Provider (Äpª¬¬°¥X²{ The specified store provider cannot be found in the configuration, or is not valid °T®§)¡A
-¦pªG¤£·Q§ó°Ê machine.config¡A¦b web.config ¥[¥H¤U³]©w§Y¥i:
+2. åŠ å…¥ DbProvider è¨­å®š:
+ä¼ºæœå™¨æœªå®‰è£ SQL CEï¼Œ.NET æœƒä¸èªå¾— Microsoft SQL Server Compact Data Provider (ç™¥ç‹€ç‚ºå‡ºç¾ The specified store provider cannot be found in the configuration, or is not valid è¨Šæ¯)ï¼Œ
+å¦‚æœä¸æƒ³æ›´å‹• machine.configï¼Œåœ¨ web.config åŠ ä»¥ä¸‹è¨­å®šå³å¯:
 <system.data>
   <DbProviderFactories>
     <remove invariant="System.Data.SqlServerCe.4.0" />
