@@ -1,8 +1,8 @@
-# ¦Û°Ê¤Æ³¡Äİ¤p¤u¨ã
+ï»¿# è‡ªå‹•åŒ–éƒ¨å±¬å°å·¥å…·
 
-## Web Site ±M®× SQL Server Compact 4.0 ¤¸¥óªº³¡¸p
+## Web Site å°ˆæ¡ˆ SQL Server Compact 4.0 å…ƒä»¶çš„éƒ¨ç½²
 
-[Web Site ±M®× SQL Server Compact 4.0 ¤¸¥óªº³¡¸p](ce_web_deploy)
+[Web Site å°ˆæ¡ˆ SQL Server Compact 4.0 å…ƒä»¶çš„éƒ¨ç½²](ce_web_deploy)
 
-°Ñ¦Òºô§}¡G
-- [Web Site ±M®× SQL Server Compact 4.0 ¤¸¥óªº¤â°Ê³¡¸p])http://blog.darkthread.net/post-2013-06-30-deploy-sqlce4-by-copy-files.aspx)
+åƒè€ƒç¶²å€ï¼š
+- [Web Site å°ˆæ¡ˆ SQL Server Compact 4.0 å…ƒä»¶çš„æ‰‹å‹•éƒ¨ç½²])http://blog.darkthread.net/post-2013-06-30-deploy-sqlce4-by-copy-files.aspx)
