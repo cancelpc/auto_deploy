@@ -13,14 +13,14 @@
 伺服器未安裝 SQL CE，.NET 會不認得 Microsoft SQL Server Compact Data Provider (癥狀為出現 The specified store provider cannot be found in the configuration, or is not valid 訊息)，
 如果不想更動 machine.config，在 web.config 加以下設定即可:
 
-`
+```
 <system.data>
   <DbProviderFactories>
     <remove invariant="System.Data.SqlServerCe.4.0" />
     <add name="Microsoft SQL Server Compact Data Provider 4.0" invariant="System.Data.SqlServerCe.4.0" description=".NET Framework Data Provider for Microsoft SQL Server Compact" type="System.Data.SqlServerCe.SqlCeProviderFactory, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
   </DbProviderFactories>
 </system.data> 
-`
+```
 
 ## 參考網址：                                                                                                                       
 	- [Web Site 專案 SQL Server Compact 4.0 元件的手動部署](http://blog.darkthread.net/post-2013-06-30-deploy-sqlce4-by-copy-files.aspx) 
